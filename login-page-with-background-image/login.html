@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="./loginstyle.css">
+
+</head>
+<body>
+<div id="bg"></div>
+
+<form id="login-form">
+  <button class="btn" id="video" style="cursor: pointer;">Video</button>
+  <button class="btn" id="blog" style="cursor: pointer;">Blog</button>
+
+</form>
+
+<script>
+    document.getElementById("video").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "../index.html";
+  });
+  document.getElementById("blog").addEventListener("click", function (event) {
+      event.preventDefault();  
+      alert("Working on it!");
+  });
+</script>
+
+</body>
+</html>

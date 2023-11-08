@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Player</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="Menu" type="button" style="position: fixed; cursor: pointer; background-color: black; color: white;">
+        <button class="Btn">
+            Return To Menu
+        </button>
+    </div>
+        <script>
+             document.getElementById("Menu").addEventListener("click", function (event) {
+                window.location.href = "login-page-with-background-image/login.html";
+            });
+        </script>
+    <div id="videos-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
