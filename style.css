@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
 }
 .video-card {
-    width: 45%;
+    width: 70%;
     margin: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     background-color: #fff;
@@ -27,7 +27,7 @@ body {
   padding-top: 20px;
 }
 .VideoFrame {
-  padding: 7px;
+  padding: 2px;
 }
 .check-button {
   position: absolute;
@@ -48,7 +48,7 @@ iframe {
     box-shadow: 0 0.625em 1.25em rgba(0, 0, 0, 0.1);
 }
 h3.title{
-    margin: 0;
+    margin: 5px;
 }
 .video-description-box {
     background-color: #E7E9EB;
@@ -64,7 +64,7 @@ h3.title{
 }
 .div-download {
     display:inline-block;
-    position:relative;
+    position: relative  ;
     margin:30px 5px;
     padding:20px 20px 20px 80px;
     color:#fff;
@@ -77,8 +77,8 @@ p.description-text{
 .download-button {
   position: absolute;
   top: calc(50% - 30px);
-  right: calc(50% - 115px);
-  width: 230px;
+  right: calc(50% - 150px);
+  width: 300px;
   height: 60px;
   background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.075), rgba(255,255,255,.045));
   background-image: linear-gradient(to top, rgba(0,0,0,.075), rgba(255,255,255,.045));
@@ -92,8 +92,8 @@ p.description-text{
   transition: all .3s cubic-bezier(.67,.13,.1,.81), transform .15s cubic-bezier(.67,.13,.1,.81);
 }
 .download-button:hover {
-  right: calc(50% - 200px);
-  width: 400px;
+  right: calc(50% - 235px);
+  width: 470px;
 }
 .download-button:active {
   transform: translateY(3px);
@@ -284,4 +284,46 @@ p.description-text{
 .Btn:active {
   transform: translate(5px,5px);
   transition-duration: .3s;
+}
+.card {
+  z-index: 2;
+  --bg: #e8e8e8;
+  --contrast: #e2e0e0;
+  --grey: #93a1a1;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  padding: 9px;
+  background-color: var(--bg);
+  border-radius: 35px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card-overlay {
+  position: relative;
+  text-align: center;
+  /* inset: 0; */
+  pointer-events: none;
+  /* background: repeating-conic-gradient(var(--bg) 0.0000001%, var(--grey) 0.000104%) 60% 60%/600% 600%; */
+  filter: opacity(80%) contrast(20%);
+}
+
+.card-inner {
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 150px;
+  height: 40px;
+  background-color: var(--contrast);
+  border-radius: 30px;
+  /* Content style */
+  font-size: 30px;
+  font-weight: 900;
+  color: #807777;
+  text-align: center;
+  font-family: monospace;
 }
