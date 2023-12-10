@@ -27,6 +27,7 @@ body {
   padding-top: 20px;
 }
 .VideoFrame {
+  height: 43.25vw;
   padding: 2px;
 }
 .check-button {
@@ -43,7 +44,7 @@ iframe {
     max-width: 56.25em;
     border-radius: 0.3125em;
     background: var(--black_color);
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 9 / 16;
     position: relative;
     box-shadow: 0 0.625em 1.25em rgba(0, 0, 0, 0.1);
 }
